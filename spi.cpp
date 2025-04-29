@@ -2,15 +2,15 @@
 #include <cstdint>
 #include <deque>
 
-std::deque<bool> dq_CS;
-std::deque<bool> dq_SCK;
-std::deque<bool> dq_MISO;
-std::deque<bool> dq_MOSI;
+std::deque<uint8_t> dq_CS;
+std::deque<uint8_t> dq_SCK;
+std::deque<uint8_t> dq_MISO;
+std::deque<uint8_t> dq_MOSI;
 
-bool MOSI = false;
-bool MISO = false;
-bool SCK = false;
-bool CS = true;
+uint8_t MOSI = 2;
+uint8_t MISO = 2;
+uint8_t SCK = 0;
+uint8_t CS = 1;
 
 void append_stat() {
     dq_CS.push_back(CS);
@@ -27,7 +27,7 @@ void set_SCK(bool stat) {
 uint8_t transfer(uint8_t data_in) {
     uint8_t data_out = 0;
     append_stat();
-    CS = false; //Выбрали устройство
+    CS = 0; //Выбрали устройство
     for (int i = 7; i >= 0; --i) {
         MOSI = (data_in >> i) & 1;
         set_SCK(true);
@@ -37,19 +37,22 @@ uint8_t transfer(uint8_t data_in) {
         }
         set_SCK(false);
     }
-    CS = true;
+    CS = 1;
     set_SCK(true);
     return data_out;
 }
 
-void print_diagram(std::deque<bool> dq) {
+void print_diagram(std::deque<uint8_t>dq) {
     for (int i = 0; i < dq.size(); i++){
-        switch (dq[i]) {
-            case false:
+        switch ((int)dq[i]) {
+            case 0:
                 std::cout << "_";
                 break;
-            case true:
+            case 1:
                 std::cout << "‾";
+                break;
+            case 2:
+                std::cout << "-";
                 break;
         }
     }
