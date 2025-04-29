@@ -1,10 +1,19 @@
 CC = g++
-SRC = jtag.cpp
-TARGET = jtag
+SRC1 = jtag.cpp
+SRC2 = spi.cpp
+TARGET1 = jtag
+TARGET2 = spi
 
-all: $(TARGET)
-	./$(TARGET)
+all: jtag spi
 
-$(TARGET): $(SRC)
-	$(CC) $(SRC) -o $(TARGET) 
+jtag:
+	$(CC) $(SRC1) -o $(TARGET1)
+	./$(TARGET1)
+	rm $(TARGET1)
 
+spi:
+	$(CC) $(SRC2) -o $(TARGET2)
+	./$(TARGET2)
+	rm $(TARGET2)
+	
+.PHONY: all jtag spi
