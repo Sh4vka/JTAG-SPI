@@ -22,8 +22,8 @@ void set_TCK(uint8_t stat) {
 }
 
 void full_pulse() {
-    set_TCK(1);
     set_TCK(0);
+    set_TCK(1);
 }
 
 void move_idle_shift_dr() {
@@ -42,13 +42,15 @@ void move_shift_dr_update_idle() {
 uint8_t shift_byte(uint8_t byte) {
     uint8_t out = 0;
     for (int i = 0; i <= 7; i++) {
-        set_TCK(1);
         TDI = (byte >> i) & 1;
         set_TCK(0);
         if (TDO == 1) {
             out |= (1 << i);
         }
+        set_TCK(1);
     }
+    TDI = 2;
+    TDO = 2;
     return out;
 }
 
@@ -70,6 +72,7 @@ void print_diagram(std::deque<uint8_t> dq) {
 }
 
 int main() {
+    set_TCK(1);
     move_idle_shift_dr();
     uint8_t num = 0x55;
     uint8_t received = shift_byte(num);
