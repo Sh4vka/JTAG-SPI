@@ -1,2 +1,2 @@
-# Empty dependencies file for JTAG_Project.
+# Empty dependencies file for a.out.
 # This may be replaced when dependencies are built.

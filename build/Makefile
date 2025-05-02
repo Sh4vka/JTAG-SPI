@@ -117,24 +117,24 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named JTAG_Project
+# Target rules for targets named a.out
 
 # Build rule for target.
-JTAG_Project: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 JTAG_Project
-.PHONY : JTAG_Project
+a.out: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 a.out
+.PHONY : a.out
 
 # fast build rule for target.
-JTAG_Project/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/JTAG_Project.dir/build.make CMakeFiles/JTAG_Project.dir/build
-.PHONY : JTAG_Project/fast
+a.out/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/a.out.dir/build.make CMakeFiles/a.out.dir/build
+.PHONY : a.out/fast
 
 Include/JTAG.o: Include/JTAG.cpp.o
 .PHONY : Include/JTAG.o
 
 # target to build an object file
 Include/JTAG.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/JTAG_Project.dir/build.make CMakeFiles/JTAG_Project.dir/Include/JTAG.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/a.out.dir/build.make CMakeFiles/a.out.dir/Include/JTAG.cpp.o
 .PHONY : Include/JTAG.cpp.o
 
 Include/JTAG.i: Include/JTAG.cpp.i
@@ -142,7 +142,7 @@ Include/JTAG.i: Include/JTAG.cpp.i
 
 # target to preprocess a source file
 Include/JTAG.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/JTAG_Project.dir/build.make CMakeFiles/JTAG_Project.dir/Include/JTAG.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/a.out.dir/build.make CMakeFiles/a.out.dir/Include/JTAG.cpp.i
 .PHONY : Include/JTAG.cpp.i
 
 Include/JTAG.s: Include/JTAG.cpp.s
@@ -150,15 +150,39 @@ Include/JTAG.s: Include/JTAG.cpp.s
 
 # target to generate assembly for a file
 Include/JTAG.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/JTAG_Project.dir/build.make CMakeFiles/JTAG_Project.dir/Include/JTAG.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/a.out.dir/build.make CMakeFiles/a.out.dir/Include/JTAG.cpp.s
 .PHONY : Include/JTAG.cpp.s
+
+Include/SPI.o: Include/SPI.cpp.o
+.PHONY : Include/SPI.o
+
+# target to build an object file
+Include/SPI.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/a.out.dir/build.make CMakeFiles/a.out.dir/Include/SPI.cpp.o
+.PHONY : Include/SPI.cpp.o
+
+Include/SPI.i: Include/SPI.cpp.i
+.PHONY : Include/SPI.i
+
+# target to preprocess a source file
+Include/SPI.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/a.out.dir/build.make CMakeFiles/a.out.dir/Include/SPI.cpp.i
+.PHONY : Include/SPI.cpp.i
+
+Include/SPI.s: Include/SPI.cpp.s
+.PHONY : Include/SPI.s
+
+# target to generate assembly for a file
+Include/SPI.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/a.out.dir/build.make CMakeFiles/a.out.dir/Include/SPI.cpp.s
+.PHONY : Include/SPI.cpp.s
 
 Include/Signal.o: Include/Signal.cpp.o
 .PHONY : Include/Signal.o
 
 # target to build an object file
 Include/Signal.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/JTAG_Project.dir/build.make CMakeFiles/JTAG_Project.dir/Include/Signal.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/a.out.dir/build.make CMakeFiles/a.out.dir/Include/Signal.cpp.o
 .PHONY : Include/Signal.cpp.o
 
 Include/Signal.i: Include/Signal.cpp.i
@@ -166,7 +190,7 @@ Include/Signal.i: Include/Signal.cpp.i
 
 # target to preprocess a source file
 Include/Signal.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/JTAG_Project.dir/build.make CMakeFiles/JTAG_Project.dir/Include/Signal.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/a.out.dir/build.make CMakeFiles/a.out.dir/Include/Signal.cpp.i
 .PHONY : Include/Signal.cpp.i
 
 Include/Signal.s: Include/Signal.cpp.s
@@ -174,7 +198,7 @@ Include/Signal.s: Include/Signal.cpp.s
 
 # target to generate assembly for a file
 Include/Signal.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/JTAG_Project.dir/build.make CMakeFiles/JTAG_Project.dir/Include/Signal.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/a.out.dir/build.make CMakeFiles/a.out.dir/Include/Signal.cpp.s
 .PHONY : Include/Signal.cpp.s
 
 main.o: main.cpp.o
@@ -182,7 +206,7 @@ main.o: main.cpp.o
 
 # target to build an object file
 main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/JTAG_Project.dir/build.make CMakeFiles/JTAG_Project.dir/main.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/a.out.dir/build.make CMakeFiles/a.out.dir/main.cpp.o
 .PHONY : main.cpp.o
 
 main.i: main.cpp.i
@@ -190,7 +214,7 @@ main.i: main.cpp.i
 
 # target to preprocess a source file
 main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/JTAG_Project.dir/build.make CMakeFiles/JTAG_Project.dir/main.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/a.out.dir/build.make CMakeFiles/a.out.dir/main.cpp.i
 .PHONY : main.cpp.i
 
 main.s: main.cpp.s
@@ -198,7 +222,7 @@ main.s: main.cpp.s
 
 # target to generate assembly for a file
 main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/JTAG_Project.dir/build.make CMakeFiles/JTAG_Project.dir/main.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/a.out.dir/build.make CMakeFiles/a.out.dir/main.cpp.s
 .PHONY : main.cpp.s
 
 # Help Target
@@ -209,10 +233,13 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... JTAG_Project"
+	@echo "... a.out"
 	@echo "... Include/JTAG.o"
 	@echo "... Include/JTAG.i"
 	@echo "... Include/JTAG.s"
+	@echo "... Include/SPI.o"
+	@echo "... Include/SPI.i"
+	@echo "... Include/SPI.s"
 	@echo "... Include/Signal.o"
 	@echo "... Include/Signal.i"
 	@echo "... Include/Signal.s"

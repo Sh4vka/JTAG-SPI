@@ -1,10 +1,11 @@
-JTAG_Project: \
+a.out: \
   /usr/lib/gcc/x86_64-pc-linux-gnu/14.2.1/../../../../lib/Scrt1.o \
   /usr/lib/gcc/x86_64-pc-linux-gnu/14.2.1/../../../../lib/crti.o \
   /usr/lib/gcc/x86_64-pc-linux-gnu/14.2.1/crtbeginS.o \
-  CMakeFiles/JTAG_Project.dir/main.cpp.o \
-  CMakeFiles/JTAG_Project.dir/Include/JTAG.cpp.o \
-  CMakeFiles/JTAG_Project.dir/Include/Signal.cpp.o \
+  CMakeFiles/a.out.dir/main.cpp.o \
+  CMakeFiles/a.out.dir/Include/JTAG.cpp.o \
+  CMakeFiles/a.out.dir/Include/SPI.cpp.o \
+  CMakeFiles/a.out.dir/Include/Signal.cpp.o \
   /usr/lib/gcc/x86_64-pc-linux-gnu/14.2.1/../../../../lib/libstdc++.so \
   /usr/lib/gcc/x86_64-pc-linux-gnu/14.2.1/../../../../lib/libm.so \
   /usr/lib/gcc/x86_64-pc-linux-gnu/14.2.1/../../../../lib/libm.so \
@@ -39,11 +40,13 @@ JTAG_Project: \
 
 /usr/lib/gcc/x86_64-pc-linux-gnu/14.2.1/crtbeginS.o:
 
-CMakeFiles/JTAG_Project.dir/main.cpp.o:
+CMakeFiles/a.out.dir/main.cpp.o:
 
-CMakeFiles/JTAG_Project.dir/Include/JTAG.cpp.o:
+CMakeFiles/a.out.dir/Include/JTAG.cpp.o:
 
-CMakeFiles/JTAG_Project.dir/Include/Signal.cpp.o:
+CMakeFiles/a.out.dir/Include/SPI.cpp.o:
+
+CMakeFiles/a.out.dir/Include/Signal.cpp.o:
 
 /usr/lib/gcc/x86_64-pc-linux-gnu/14.2.1/../../../../lib/libstdc++.so:
 

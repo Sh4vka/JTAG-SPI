@@ -1,5 +1,5 @@
-CMakeFiles/JTAG_Project.dir/Include/Signal.cpp.o: \
- /home/matthew/Desktop/JTAG-SPI/Include/Signal.cpp \
+CMakeFiles/a.out.dir/Include/SPI.cpp.o: \
+ /home/matthew/Desktop/JTAG-SPI/Include/SPI.cpp \
  /usr/include/stdc-predef.h /usr/include/c++/14.2.1/iostream \
  /usr/include/c++/14.2.1/bits/requires_hosted.h \
  /usr/include/c++/14.2.1/x86_64-pc-linux-gnu/bits/c++config.h \
@@ -146,8 +146,10 @@ CMakeFiles/JTAG_Project.dir/Include/Signal.cpp.o: \
  /usr/include/c++/14.2.1/bits/istream.tcc /usr/include/c++/14.2.1/deque \
  /usr/include/c++/14.2.1/bits/stl_uninitialized.h \
  /usr/include/c++/14.2.1/bits/stl_deque.h \
- /usr/include/c++/14.2.1/bits/deque.tcc /usr/include/c++/14.2.1/cstdint \
+ /usr/include/c++/14.2.1/bits/deque.tcc \
+ /home/matthew/Desktop/JTAG-SPI/Include/Signal.h \
+ /usr/include/c++/14.2.1/cstdint \
  /usr/lib/gcc/x86_64-pc-linux-gnu/14.2.1/include/stdint.h \
  /usr/include/stdint.h /usr/include/bits/stdint-uintn.h \
  /usr/include/bits/stdint-least.h \
- /home/matthew/Desktop/JTAG-SPI/Include/Signal.h
+ /home/matthew/Desktop/JTAG-SPI/Include/SPI.h

@@ -1,0 +1,1 @@
+/usr/bin/c++ -Wl,--dependency-file=CMakeFiles/a.out.dir/link.d CMakeFiles/a.out.dir/main.cpp.o CMakeFiles/a.out.dir/Include/JTAG.cpp.o CMakeFiles/a.out.dir/Include/SPI.cpp.o CMakeFiles/a.out.dir/Include/Signal.cpp.o -o a.out

@@ -1,3 +1,3 @@
-/home/matthew/Desktop/JTAG-SPI/build/CMakeFiles/JTAG_Project.dir
+/home/matthew/Desktop/JTAG-SPI/build/CMakeFiles/a.out.dir
 /home/matthew/Desktop/JTAG-SPI/build/CMakeFiles/edit_cache.dir
 /home/matthew/Desktop/JTAG-SPI/build/CMakeFiles/rebuild_cache.dir

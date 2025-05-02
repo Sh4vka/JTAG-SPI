@@ -1,6 +1,7 @@
-CMakeFiles/JTAG_Project.dir/Include/JTAG.cpp.o: \
- /home/matthew/Desktop/JTAG-SPI/Include/JTAG.cpp \
- /usr/include/stdc-predef.h /usr/include/c++/14.2.1/iostream \
+CMakeFiles/a.out.dir/main.cpp.o: /home/matthew/Desktop/JTAG-SPI/main.cpp \
+ /usr/include/stdc-predef.h /home/matthew/Desktop/JTAG-SPI/Include/JTAG.h \
+ /home/matthew/Desktop/JTAG-SPI/Include/Signal.h \
+ /usr/include/c++/14.2.1/iostream \
  /usr/include/c++/14.2.1/bits/requires_hosted.h \
  /usr/include/c++/14.2.1/x86_64-pc-linux-gnu/bits/c++config.h \
  /usr/include/c++/14.2.1/x86_64-pc-linux-gnu/bits/os_defines.h \
@@ -143,12 +144,11 @@ CMakeFiles/JTAG_Project.dir/Include/JTAG.cpp.o: \
  /usr/include/c++/14.2.1/bits/locale_facets.tcc \
  /usr/include/c++/14.2.1/bits/basic_ios.tcc \
  /usr/include/c++/14.2.1/bits/ostream.tcc /usr/include/c++/14.2.1/istream \
- /usr/include/c++/14.2.1/bits/istream.tcc /usr/include/c++/14.2.1/cstdint \
- /usr/lib/gcc/x86_64-pc-linux-gnu/14.2.1/include/stdint.h \
- /usr/include/stdint.h /usr/include/bits/stdint-uintn.h \
- /usr/include/bits/stdint-least.h /usr/include/c++/14.2.1/deque \
+ /usr/include/c++/14.2.1/bits/istream.tcc /usr/include/c++/14.2.1/deque \
  /usr/include/c++/14.2.1/bits/stl_uninitialized.h \
  /usr/include/c++/14.2.1/bits/stl_deque.h \
- /usr/include/c++/14.2.1/bits/deque.tcc \
- /home/matthew/Desktop/JTAG-SPI/Include/Signal.h \
- /home/matthew/Desktop/JTAG-SPI/Include/JTAG.h
+ /usr/include/c++/14.2.1/bits/deque.tcc /usr/include/c++/14.2.1/cstdint \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/14.2.1/include/stdint.h \
+ /usr/include/stdint.h /usr/include/bits/stdint-uintn.h \
+ /usr/include/bits/stdint-least.h \
+ /home/matthew/Desktop/JTAG-SPI/Include/SPI.h
