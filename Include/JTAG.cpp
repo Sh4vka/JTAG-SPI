@@ -13,8 +13,8 @@ JTAG::JTAG() :
         TDO("TDO", 2, dq_TDO) {}
 
 void JTAG::pulse_TCK() {
-        TCK.set(1); log_all();
         TCK.set(0); log_all();
+        TCK.set(1); log_all();
 }
 
 void JTAG::shift_byte(uint8_t byte) {
@@ -22,6 +22,7 @@ void JTAG::shift_byte(uint8_t byte) {
                 TDI.set((byte >> i) & 1);
                 pulse_TCK();
         }
+        TDI.set(2);
 }
 
 void JTAG::log_all() {
@@ -39,9 +40,9 @@ void JTAG::print_log() {
 }
 
 void JTAG::mv_idle_shift_dr() {
+        TCK.set(1); log_all();
         TMS.set(1); pulse_TCK(); //SELECT_DR_SCAN
         TMS.set(0); pulse_TCK(); //CAPTURE_DR
-        pulse_TCK(); //SHIFT_DR
 }
 
 void JTAG::mv_shift_dr_update_idle() {
