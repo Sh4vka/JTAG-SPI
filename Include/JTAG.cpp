@@ -7,21 +7,29 @@
 #include "JTAG.h"
 
 JTAG::JTAG() : 
-        TCK("TCK", 0, dq_TCK),
+        TCK("TCK", 1, dq_TCK),
         TMS("TMS", 2, dq_TMS),
         TDI("TDI", 2, dq_TDI),
         TDO("TDO", 2, dq_TDO) {}
 
 void JTAG::pulse_TCK() {
-        TCK.set(1); log_all();
         TCK.set(0); log_all();
+        TCK.set(1); log_all();
 }
 
 void JTAG::shift_byte(uint8_t byte) {
+        log_all();
+        mv_idle_shift_dr();
         for (int i = 0; i < 8; ++i) {
                 TDI.set((byte >> i) & 1);
+                if (i == 7) {
+                         TMS.set(1); //EXIT_DR
+                }
                 pulse_TCK();
         }
+        TDI.set(2);
+        pulse_TCK();
+        TMS.set(0); pulse_TCK(); //IDLE
 }
 
 void JTAG::log_all() {
