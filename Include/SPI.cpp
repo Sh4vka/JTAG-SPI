@@ -7,8 +7,8 @@
 #include "SPI.h"
 
 SPI::SPI() :
-        CS("CS", 1, dq_CS),
-        SCK("SCK", 0, dq_SCK),
+        CS  ("CS  ", 1, dq_CS),
+        SCK ("SCK ", 0, dq_SCK),
         MISO("MISO", 2, dq_MISO),
         MOSI("MOSI", 2, dq_MOSI) {}
 

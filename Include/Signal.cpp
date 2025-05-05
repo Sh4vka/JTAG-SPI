@@ -34,15 +34,15 @@ void Signal::print_signal() {
         for (int i = 0; i < log.size(); i++){
                 switch ((int)log[i]) {
                         case 0:
-                                std::cout << "_";
+                                std::cout << u8"\u2581";
                                 break;
                         case 1:
-                                std::cout << "‾";
+                                std::cout << u8"\u2588";
                                 break;
                         case 2:
-                                std::cout << "-";
+                                std::cout << u8"\u2584";
                                  break;
                 }
         }
-        std::cout << std::endl << std::endl;
+        std::cout << std::endl<< std::endl;
 }
